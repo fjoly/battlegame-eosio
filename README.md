@@ -1,6 +1,6 @@
 # Description
 
-Small project based on EOSIO Battlegames re-write with typescript and adding some features
+Small project based on EOSIO Battlegames re-write with typescript React and adding some features on top of it.
 
 ## Running the app with Docker
 ```bash
