@@ -1,0 +1,96 @@
+.PlayerProfile {
+  display:flex;
+  flex-direction: column;
+  width: 798px;
+  height: 600px;
+  background: url("./images/Game_Profile_frame.png") 15px 0 no-repeat;
+  background-size: 788px;
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase; }
+  .PlayerProfile > div,
+  .PlayerProfile .record p,
+  .PlayerProfile .record span {
+    left: 0;
+    right: 0;
+    margin: auto; }
+  .PlayerProfile .title {
+    top: -90px;
+    width: 392px;
+    height: 163.5px;
+    background: url("./images/Game_logo.png");
+    background-size: 100%;
+    color: transparent;
+    display: flex;
+    transform: translate(0px, -90px)}
+  .PlayerProfile .welcome {
+    top: 105px;
+    color: #f4e5bf;
+    font-size: 22.5px;
+    text-shadow: 2px 2px 2px black;
+    flex-direction: column;
+    display: flex;
+    transform: translate(0px, -90px)}
+  .PlayerProfile .welcome span {
+    display: flex;
+    vertical-align: middle;
+  }
+  .PlayerProfile .username {
+    flex-direction: column;
+    height: 100px;
+    display: flex;
+    top: 10px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px black;
+    transform: translate(0px, -90px);}
+  .PlayerProfile .username span {
+    justify-content: center;
+    display: flex;
+    font-size: 35px;
+    text-shadow: 2px 2px 2px black; }
+  .PlayerProfile .record {
+    display: flex;
+    width: 500.5px;
+    height: 193.5px;
+    background-image: url("./images/Game_Profile_smframe.png");
+    background-size: 100%;
+    flex-direction: column;
+    transform: translate(0px, -80px);}
+    .PlayerProfile .recordData {
+      display: flex;
+      flex-direction: row;}
+    .PlayerProfile .record p:nth-child(2), .PlayerProfile .record span:nth-child(2) {
+        width: 138.5px;
+        height: 140.5px;
+        background-image: url("./images/Game_Profile_icon.png");
+        background-size: 100%;
+        color: transparent; }
+      .PlayerProfile .username .field {
+        display: flex;
+        margin-bottom: 15px;
+        font-size: 10px;
+        justify-content: center}
+      .PlayerProfile .username .field label {
+        color: #ffe4a9;
+        text-align: center;
+        text-transform: uppercase;
+        align-items: center;
+        text-shadow: 2px 2px 2px black;
+        display: flex;}
+      .PlayerProfile .username .field input {
+        margin: 5px 0;
+        padding: 4px 20px 0;
+        width: 200px;
+        height: 42px;
+        background: url("./images/Game_Login_form.png");
+        background-size: 471.5px;
+        color: #312a25;
+        letter-spacing: 3px;
+      /* https://stackoverflow.com/a/37432260 */ }
+      .PlayerProfile .field input::placeholder {
+        color: #666;
+        letter-spacing: 2px; }
+  .PlayerProfile .buttons {
+    display: flex;
+    bottom: 85px;
+    transform: translate(0px, -80px);}

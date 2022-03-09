@@ -1,0 +1,8 @@
+.PlayerBoard {
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-between;}
+
+.PlayerBoard span{
+  display: flex;
+  justify-content: space-between;}

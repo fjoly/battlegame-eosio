@@ -1,0 +1,152 @@
+.ScoreBoard {
+  width: 50%;
+  height: 100%;
+  background: url("./images/old_paper_bg.png") no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform-origin: center;
+  border-top: 50px solid transparent;
+  border-left: 70px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right: 70px solid transparent;
+  color: #272727;
+  font-family: 'Almendra';
+  font-size: 20px;
+  }
+.ScoreBoard .ScoreBoardTable{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ScoreBoard .title {
+  top: -20px;
+  display: flex;
+  justify-content:center;
+  padding: 37px;
+  width: 278px;
+  height: 100px;
+  background-image: url("./images/title_rules.png");
+  background-size: 100%;
+  color: #e9fffb;
+  letter-spacing: 2px;
+  text-align: center;
+  align-items: center;
+  text-shadow: 0 0 15px rgba(244, 229, 191, 0.6);
+  font-size: 23px;
+  text-transform: uppercase; }
+
+.ScoreBoard .table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.ScoreBoard .ScoreBoardTable .table .row::-webkit-scrollbar {
+  width: 5px;
+  /* for vertical scrollbars */ }
+.ScoreBoard .ScoreBoardTable .table .row::-webkit-scrollbar-track {
+  background: #bb8339;
+  border-radius: 5px; }
+.ScoreBoard .ScoreBoardTable .table .row::-webkit-scrollbar-thumb {
+  background: #734d17;
+  border-radius: 5px; }
+
+.ScoreBoard .table .row {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+.ScoreBoard .table .row-legend {
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+.ScoreBoard .table .row-legend .cell {
+  display: flex;
+  padding: 0.5rem;
+}
+
+.ScoreBoard .table .row .cell {
+  font-size: 15px;
+  display: flex;
+  padding: 0.5rem;
+}
+
+.ScoreBoard span {
+  display: flex;
+}
+
+.ScoreBoard .load-error {
+  height: 1em;
+  font-size: 14.5px;
+  white-space: nowrap;
+  overflow: hidden; }
+.ScoreBoard .load-error .error {
+  width: 100%;
+  color: #ff5400;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block; }
+
+@keyframes dim {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.ScoreBoard .spinner .image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -49px;
+  margin-left: -49px;
+  width: 98px;
+  height: 98px;
+  background: url("./images/logo_loading.png");
+  background-size: 100%; }
+.ScoreBoard .spinner .circles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -51px;
+  width: 100px;
+  height: 102px;
+  animation: spin 1s infinite linear; }
+.ScoreBoard .spinner .circle {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+.ScoreBoard .spinner .circle .inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 3px solid rgba(255, 201, 79, 0.3);
+  border-right: none;
+  border-top: none;
+  backgroudn-clip: padding;
+  box-shadow: inset 0px 0px 10px rgba(255, 255, 134, 0.17); }
+.ScoreBoard .spinner .circle:nth-of-type(0) .inner,
+.ScoreBoard .spinner .circle:nth-of-type(1) .inner,
+.ScoreBoard .spinner .circle:nth-of-type(2) .inner {
+  animation: spin 1s infinite linear; }
+.ScoreBoard .spinner .circle:nth-of-type(0) {
+  transform: rotate(0deg); }
+.ScoreBoard .spinner .circle:nth-of-type(1) {
+  transform: rotate(70deg); }
+.ScoreBoard .spinner .circle:nth-of-type(2) {
+  transform: rotate(140deg); }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }

@@ -1,0 +1,47 @@
+battlegames.iml
+# Front project
+battlegames-front/dist/
+battlegames-front/node_modules
+battlegames-front/.pnp
+battlegames-front/.pnp.js
+battlegames-front/build
+# testing
+battlegames-front/coverage
+# misc
+battlegames-front/.DS_Store
+battlegames-front/.env.local
+battlegames-front/.env.development.local
+battlegames-front/.env.test.local
+battlegames-front/.env.production.local
+battlegames-front/npm-debug.log*
+battlegames-front/yarn-debug.log*
+battlegames-front/yarn-error.log*
+battlegames-front/.idea
+
+
+# Back project
+# compiled output
+battlegames-back/dist
+battlegames-back/node_modules
+# Logs
+battlegames-back/logs
+battlegames-back/*.log
+battlegames-back/npm-debug.log*
+battlegames-back/pnpm-debug.log*
+battlegames-back/yarn-debug.log*
+battlegames-back/yarn-error.log*
+battlegames-back/lerna-debug.log*
+# OS
+battlegames-back/.DS_Store
+# Tests
+battlegames-back/coverage
+battlegames-back/.nyc_output
+# IDEs and editors
+battlegames-back/.idea
+battlegames-back/.project
+battlegames-back/.classpath
+battlegames-back/.c9/
+battlegames-back/*.launch
+battlegames-back/.settings/
+battlegames-back/*.sublime-workspace
+
